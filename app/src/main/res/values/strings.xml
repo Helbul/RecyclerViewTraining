@@ -6,6 +6,13 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="add">Добавить</string>
+    <string name="cancel">Отменить</string>
+    <string name="delete">Удалить</string>
+    <string name="save">Сохранить</string>
+    <string name="first_name">Имя</string>
+    <string name="lastname">Фамилия</string>
+    <string name="telephone_number">Номер телефона</string>
 
 
 </resources>

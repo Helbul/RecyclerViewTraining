@@ -17,9 +17,9 @@ class DetailContactFragment : BottomSheetDialogFragment(){
                 val args = Bundle()
                 args.putParcelable(ARG_CONTACT, contact)
 
-                val fragment = DetailContactFragment()
-                fragment.arguments = args
-                fragment
+                DetailContactFragment().apply {
+                    arguments = args
+                }
             } ?: run {
                 DetailContactFragment()
             }
@@ -33,7 +33,7 @@ class DetailContactFragment : BottomSheetDialogFragment(){
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentDetailContactBinding.inflate(inflater, container, false)
         return binding.root
